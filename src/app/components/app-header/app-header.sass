@@ -1,0 +1,38 @@
+.app-header
+  &--container
+    display: flex
+    height: 64px
+    width: 100%
+    flex-direction: row
+
+    &__logo
+      width: 30%
+
+  &--logo
+    display: flex
+    transition: .3s ease-in-out
+    height: 64px
+    width: 64px
+
+  &--menu
+    width: 70%
+    display: flex
+    flex-direction: row
+    align-items: center
+
+
+.header
+  &--menu
+    cursor: pointer
+    text-align: center
+    width: calc(100% / 5)
+    height: 100%
+    align-content: center
+    &__activated
+      &::after
+        content: ''
+        display: inline-grid
+        width: 100%
+        height: 2px
+        margin-top: auto
+        background-color: black
